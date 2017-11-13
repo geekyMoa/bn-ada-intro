@@ -1,0 +1,146 @@
+.reveal section .no-img-border img {
+  border: none;
+}
+
+.reveal section .img-max-size img {
+  max-width: 100px;
+}
+
+.reveal section .img-no-bg img {
+  background: transparent;
+  box-shadow: none;
+}
+
+
+.Berlin-html-popup {
+  position: absolute;
+}
+
+.Berlin-html-popup.Berlin-html-popup--area1 {
+  top: 0px;
+  left: -50px;
+  transform: rotate(-15deg);
+}
+
+.Berlin-html-popup.Berlin-html-popup--area2 {
+  top: -30px;
+  right: -10px;
+  transform: rotate(15deg);
+}
+
+.Berlin-html-popup.Berlin-html-popup--area3 {
+  position: absolute;
+  top: -190px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: rotate(-5deg)
+}
+
+.Berlin-html-code {
+  position: relative;
+  top: -1.8em;
+  font-family: Inconsolata, monospace !important;
+}
+
+.Berlin-html-popup .Berlin-html-code {
+  right: 1em;
+}
+.Berlin-html-popup .Berlin-html-code:nth-child(1) {
+  left: 1em;
+  right: 0;
+}
+
+
+.toggle-width.toggle-hidden {
+  display: inline-block;
+  width: 0px;
+  opacity: 0;
+}
+
+.toggle-width.toggle-visible {
+  width: auto;
+  display: inline;
+  opacity: 1;
+}
+
+.smaller-font-size {
+  font-size: 0.7em !important;
+}
+
+.lizzyBennet-padding {
+  padding-top: 100px !important;
+  padding-bottom: 1em !important;
+  display: block;
+}
+
+.reveal section .proper-text {
+  font-family: Nunito, sans-serif !important;
+  font-size: 0.7em !important;
+}
+
+.reveal section .proper-text h1 {
+  font-family: Pacifico, cursive !important;
+  text-transform: none !important;
+  font-weight: 700;
+  font-size: 2em !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1.1em;
+}
+
+.reveal section .proper-text .portrait {
+  float: right;
+  margin: 0 0 1em 2em;
+}
+
+.reveal section .proper-text p.preamble {
+  font-weight: 600;
+}
+
+.lizzyBennetImageTag {
+  display: none;
+}
+
+
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  margin: 0;
+}
+
+.reveal section img.simple {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #13DAEC;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+
+.reveal code {
+  font-family: Inconsolata;
+}
+
+.reveal pre {
+  white-space: normal;
+}
+
+.reveal pre code {
+  white-space: pre;
+  padding: 10px;
+}
+
+.reveal p.intro {
+	border: 10px solid blue;
+	background: hotpink;
+  color: yellow;
+  padding: 20px;
+}

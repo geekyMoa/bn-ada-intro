@@ -8,9 +8,10 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="lib/css/bn.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/css/atom-one-dark.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +25,240 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-image="/lib/img/code.jpg">
+					<h1 style="text-shadow: 0 0 19px #000, 0 0 62px #000;">
+						Intro till utveckling
+					</h1>
+				</section>
+
+				<section>
+					<section><h1>Internet</h1></section>
+					<section>
+						<h3>Servers vs clients</h3>
+						<div class="fragment no-img-border img-max-size img-no-bg">
+							<div class="fragment internet-server">
+								<img src="/lib/img/server.svg" />
+							</div>
+							<img class="internet-laptop" src="/lib/img/laptop.svg" />
+							<div class="fragment internet-clients">
+								<img style="padding: 0 10px;" src="/lib/img/monitor.svg" />
+								<img style="padding: 0 10px;" src="/lib/img/smartphone-call.svg" />
+								<img style="padding: 0 10px;" src="/lib/img/television.svg" />
+							</div>
+						</div>
+					</section>
+
+					<section class="no-img-border img-no-bg img-max-size" data-background-color="#fff">
+							<h3>Requests och responses</h3>
+							<img src="/lib/img/transfer.svg">
+					</section>
+
+					<section class="no-img-border img-no-bg" data-background-color="#fff">
+						<h3>APIs</h3>
+						<img class="fragment" src="/lib/img/apis.png" />
+					</section>
+
+				</section>
+
+				<section>
+						<section><h1>Webbutveckling</h1></section>
+
+						<section>
+							<h3>Frontend vs Backend</h3>
+								<p class="fragment no-img-border img-no-bg">
+									<img src="/lib/img/smartphone-call.svg" style="position: relative; top: 23px; max-width: 50px;">
+									Frontend: Client
+								</p>
+								<p class="fragment no-img-border img-no-bg">
+									<img src="/lib/img/server.svg" style="position: relative; top: 23px; max-width: 50px;">
+									Backend: Server
+								</p>
+						</section>
+
+						<section>
+							<h1>Språk?</h1>
+							<ul class="fragment">
+								<li>HTML<span class="fragment">: vad är vad?</span></li>
+								<li>CSS<span class="fragment">: hur ska det se ut?</span></li>
+								<li>JavaScript<span class="fragment">: hur ska det fungera?</span></li>
+							</ul>
+						</section>
+
+						<section class="no-img-border img-no-bg">
+							<h1 class="straight-font">HTML</h1>
+							<div class="fragment Berlin-html-popup Berlin-html-popup--area1" data-fragment-index="1">
+								<span class="fragment Berlin-html-code" data-fragment-index="2">&lt;dog&gt;</span>
+									<img src="/lib/img/html/dog2.svg" height="150" width="150" class="plain" />
+								<span class="fragment Berlin-html-code" data-fragment-index="2">&lt;/dog&gt;</span>
+							</div>
+							<div class="fragment Berlin-html-popup Berlin-html-popup--area2" data-fragment-index="1">
+								<span class="fragment Berlin-html-code" data-fragment-index="2">&lt;girl&gt;</span>
+									<img src="/lib/img/html/student.svg" height="150" width="150" class="plain" />
+								<span class="fragment Berlin-html-code" data-fragment-index="2">&lt;/girl&gt;</span>
+							</div>
+							<div class="fragment Berlin-html-popup Berlin-html-popup--area3" data-fragment-index="1">
+								<span class="fragment Berlin-html-code" data-fragment-index="2">&lt;chair&gt;</span>
+									<img src="/lib/img/html/chair.svg" height="150" width="150" class="plain" />
+								<span class="fragment Berlin-html-code" data-fragment-index="2">&lt;/chair&gt;</span>
+							</div>
+						</section>
+
+						<!-- ett elements uppbyggnad 1 -->
+						<section>
+							<div class="left-align smaller-dogs smaller-font-size">
+								<div>
+									<span class="Berlin-html-code">
+										&lt;dog<!-- whitespace do not remove
+										--><span class="fragment" data-fragment-index="1" data-berlin-containstoggle="yes"><!--
+									--><span class="toggle-width toggle-hidden"><!--
+										--><span class="attribute"> class</span>="<!--
+											--><span class="fragment" data-fragment-index="4" data-berlin-containstoggle="yes"><!--
+											--><span class="toggle-width toggle-hidden">head</span><!--
+												--><span class="fragment" data-fragment-index="5" data-berlin-containstoggle="yes"><!--
+												--><span class="toggle-width toggle-hidden"> terrier</span><!--
+												--></span><!--
+												--></span>"<!--
+									--></span><!--
+									--></span><span class="fragment" data-fragment-index="7" data-berlin-containstoggle="yes"><span class="toggle-width toggle-hidden"><span class="attribute"> id</span>="blomma"</span></span>&gt;<!--
+									--></span>
+										<img src="/lib/img/html/dog2.svg" height="100" width="100" class="plain" />
+									<span class="Berlin-html-code">&lt;/dog&gt;</span>
+								</div>
+								<div>
+									<span class="Berlin-html-code">
+										&lt;dog<!-- whitespace do not remove
+										--><span class="fragment" data-fragment-index="1" data-berlin-containstoggle="yes"><!--
+										--><span class="toggle-width toggle-hidden"><!--
+											--><span class="attribute"> class</span>="<!--
+												--><span class="fragment" data-fragment-index="4" data-berlin-containstoggle="yes"><!--
+												--><span class="toggle-width toggle-hidden">head</span><!--
+													--><span class="fragment" data-fragment-index="5" data-berlin-containstoggle="yes"><!--
+													--><span class="toggle-width toggle-hidden"> spaniel</span><!--
+													--></span><!--
+													--></span>"<!--
+										--></span><!--
+										--></span><span class="fragment" data-fragment-index="7" data-berlin-containstoggle="yes"><span class="toggle-width toggle-hidden"><span class="attribute"> id</span>="paprika"</span></span>&gt;<!--
+									--></span>
+										<img src="/lib/img/html/dog.svg" height="100" width="100" class="plain" />
+									<span class="Berlin-html-code">&lt;/dog&gt;</span>
+								</div>
+								<div>
+									<span class="Berlin-html-code">
+										&lt;dog<!-- whitespace do not remove
+										--><span class="fragment" data-fragment-index="1" data-berlin-containstoggle="yes"><!--
+										--><span class="toggle-width toggle-hidden"><!--
+											--><span class="attribute"> class</span>="<!--
+												--><span class="fragment" data-fragment-index="4" data-berlin-containstoggle="yes"><!--
+												--><span class="toggle-width toggle-hidden">head</span><!--
+													--><span class="fragment" data-fragment-index="5" data-berlin-containstoggle="yes"><!--
+													--><span class="toggle-width toggle-hidden"> bulldog</span><!--
+													--></span><!--
+													--></span>"<!--
+										--></span><!--
+										--></span><span class="fragment" data-fragment-index="7" data-berlin-containstoggle="yes"><span class="toggle-width toggle-hidden"><span class="attribute"> id</span>="morot"</span></span>&gt;<!--
+									--></span>
+										<img src="/lib/img/html/bulldog.svg" height="100" width="100" class="plain" />
+									<span class="Berlin-html-code">&lt;/dog&gt;</span>
+								</div>
+								<div>
+									<span class="Berlin-html-code">
+										&lt;dog<!-- whitespace do not remove
+										--><span class="fragment" data-fragment-index="1" data-berlin-containstoggle="yes"><!--
+										--><span class="toggle-width toggle-hidden"><!--
+											--><span class="attribute"> class</span>="<!--
+												--><span class="fragment" data-fragment-index="4" data-berlin-containstoggle="yes"><!--
+												--><span class="toggle-width toggle-hidden">body</span><!--
+													--><span class="fragment" data-fragment-index="5" data-berlin-containstoggle="yes"><!--
+													--><span class="toggle-width toggle-hidden"> bulldog</span><!--
+													--></span><!--
+													--></span>"<!--
+										--></span><!--
+										--></span><span class="fragment" data-fragment-index="7" data-berlin-containstoggle="yes"><span class="toggle-width toggle-hidden"><span class="attribute"> id</span>="fido"</span></span>&gt;<!--
+									--></span>
+										<img src="/lib/img/html/bulldog-sitting.svg" height="100" width="100" class="plain" />
+									<span class="Berlin-html-code">&lt;/dog&gt;</span>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h1>CSS</h1>
+							<p>Selectors och properties</p>
+
+<pre class="fragment">
+<code class="html">
+<p class="intro">Augusta Ada King-Noel, Countess of Lovelace
+	(née Byron; 10 December 1815 – 27 November 1852) was an English
+	mathematician and writer, chiefly known for her work on Charles
+	Babbage's proposed mechanical general-purpose computer,
+	the Analytical Engine.
+</p>
+</code>
+</pre>
+<pre class="fragment">
+<code>
+.intro {
+	border: 10px solid blue;
+	background: hotpink;
+	color: yellow;
+	padding: 20px;
+}
+
+</code>
+</pre>
+						</section>
+						<section>
+							<p class="intro">
+								Augusta Ada King-Noel, Countess of Lovelace
+								(née Byron; 10 December 1815 – 27 November 1852) was an English
+								mathematician and writer, chiefly known for her work on Charles
+								Babbage's proposed mechanical general-purpose computer,
+								the Analytical Engine.
+							</p>
+						</section>
+
+						<section>
+<pre>
+<code class="html">
+<p class="intro">
+	Augusta Ada King-Noel, Countess of Lovelace [...]
+</p>
+
+<div class="ada-wrapper">
+	<p>
+		[...] Ada Lovelace has often been cited as the first
+		computer programmer for this reason.
+	</p>
+</div>
+
+</code>
+</pre>
+						</section>
+
+						<section>
+							<h1>JavaScript</h1>
+							<img src="/lib/img/code-readability.jpg" />
+						</section>
+
+						<section>
+<pre>
+<code class="js">
+var greeting = true;
+if (greeting) {
+	console.log('Hello, you amazing human being!');
+} else {
+	console.log('Go away, you bloviating flesh bag.')
+}
+
+</code>
+</pre>
+						</section>
+				</section>
+
+				<section>
+					<h1>Övning!</h1>
+				</section>
+
 			</div>
 		</div>
 
@@ -45,5 +278,66 @@
 				]
 			});
 		</script>
+		<script>
+    (() => {
+      const toggleAttributeClass = (element) => {
+        if (element.classList.contains('toggle-hidden')) {
+          element.classList.remove('toggle-hidden');
+          element.classList.add('toggle-visible');
+        } else if(element.classList.contains('toggle-visible')) {
+          element.classList.remove('toggle-visible');
+          element.classList.add('toggle-hidden');
+        }
+      }
+
+      const getChildren = (element) => {
+        return [...element.childNodes].reduce((children, child) => {
+          if(child.nodeName === 'SPAN'){
+            children.push(child)
+          }
+          return children;
+        }, []);
+      }
+
+      const toggleWidth = (fragments) => {
+        var childNodes = fragments.reduce((frags, frag) => [...frags, ...getChildren(frag)], []);
+        console.log(childNodes);
+        childNodes.forEach((element) => {
+          toggleAttributeClass(element);
+        });
+      }
+
+      Reveal.addEventListener( 'fragmentshown', (event) => {
+        var fragments = event.fragments ? event.fragments : [ event.fragment ];
+        if(fragments[0].getAttribute('data-berlin-containstoggle')) {
+          toggleWidth(fragments);
+        }
+
+        if (fragments[1] && fragments[1].nodeName === 'IMG' && fragments[1].classList.contains('lizzyBennet')) {
+          if (fragments[1].style.display == '' || fragments[1].style.display === 'inline') {
+            fragments[1].style.display = 'none';
+            fragments[0].classList.add('lizzyBennet-padding');
+            fragments[0].classList.remove('lizzyBennetImageTag');
+          }
+        }
+      });
+
+      Reveal.addEventListener( 'fragmenthidden', (event) => {
+        var fragments = event.fragments ? event.fragments : [ event.fragment ];
+        if(fragments[0].getAttribute('data-berlin-containstoggle')) {
+          toggleWidth(fragments);
+        }
+
+        if (fragments[1] && fragments[1].nodeName === 'IMG' && fragments[1].classList.contains('lizzyBennet')) {
+          if (!fragments[1].style.display == '' || fragments[1].style.display === 'none') {
+            fragments[1].style.display = 'inline';
+            fragments[0].classList.remove('lizzyBennet-padding');
+            fragments[0].classList.add('lizzyBennetImageTag');
+          }
+        }
+      });
+
+    })();
+    </script>
 	</body>
 </html>
