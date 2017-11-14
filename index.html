@@ -46,6 +46,12 @@
 								<img style="padding: 0 10px;" src="/lib/img/television.svg" />
 							</div>
 						</div>
+						<aside class="notes">
+							<ul>
+								<li>förenklat: "annan dator". Program, service</li>
+								<li>client, consumer. client-server-model.</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section class="no-img-border img-no-bg img-max-size" data-background-color="#fff">
@@ -101,6 +107,11 @@
 									<img src="/lib/img/html/chair.svg" height="150" width="150" class="plain" />
 								<span class="fragment Berlin-html-code" data-fragment-index="2">&lt;/chair&gt;</span>
 							</div>
+
+							<aside class="notes">
+									- Vad skulle ni säga att dessa saker är?<br/>
+									- Berätta för webbläsaren vad det är.
+								</aside>
 						</section>
 
 						<!-- ett elements uppbyggnad 1 -->
@@ -179,6 +190,14 @@
 									<span class="Berlin-html-code">&lt;/dog&gt;</span>
 								</div>
 							</div>
+
+							<aside class="notes">
+								- Vad är ett element? <br/>
+								- Metadata för element. T ex flicka: brunt hår. <br/>
+								- IRL-exempel: bild med bildtext eller openstore-id... osv <br/>
+								- Hår: kan ha flera frisyrer: bob, krulligt... frisyer kan överlappa, också <br/>
+								- Klasser: metadata för CSS. Kan ha flera klasser per element <br/>
+							</aside>
 						</section>
 
 						<section>
@@ -206,6 +225,12 @@
 
 </code>
 </pre>
+						<aside class="notes">
+							- klasser och klass-selektorer: punkt <br/>
+							- Frisyrer har flera properties: färg, längd, texture osv.<br/>
+							- properties, måsvingar, scope <br/>
+							- kan vi lista ut hur detta kommer att se ut?
+						</aside>
 						</section>
 						<section>
 							<p class="intro">
@@ -233,22 +258,53 @@
 
 </code>
 </pre>
+						<aside class="notes">
+							- child selectors <br/>
+							- livekoda exempel om det finns tid
+						</aside>
 						</section>
 
 						<section>
 							<h1>JavaScript</h1>
 							<img src="/lib/img/code-readability.jpg" />
+							<aside class="notes">
+								- programmering, vad ska hända, logik <br/>
+								- datorer är dumma, jämför med syftningsfel i texter <br/>
+								- koncept: variabler och if-satser
+								- variabler: koppövning. if-satser: stå på led, kolla i koppen
+								- kort kodexempel
+							</aside>
 						</section>
 
 						<section>
 <pre>
 <code class="js">
 var greeting = true;
-if (greeting) {
+if (greeting === true) {
 	console.log('Hello, you amazing human being!');
 } else {
 	console.log('Go away, you bloviating flesh bag.')
 }
+
+</code>
+</pre>
+						<aside class="notes">
+							- identifiera variabeln<br/>
+							- gå igenom if-satsen, förklara console.log<br/>
+							- tillsammans lista ut vad som händer<br/>
+							- testa i browserns konsoll / node<br/>
+							- förklara objekt, jämför med HMTL (attribut osv)
+						</aside>
+						</section>
+						<section>
+<pre>
+<code class="js">
+var moa = {
+	name: 'Moa',
+	hairColor: 'brown',
+	numberOfHorsesOwned: 3,
+	yearsAsADeveloper: 7
+};
 
 </code>
 </pre>
@@ -257,6 +313,15 @@ if (greeting) {
 
 				<section>
 					<h1>Övning!</h1>
+					<a href="https://github.com/geekyMoa/bn-ada-intro-exercise">
+						https://github.com/geekyMoa/bn-ada-intro-exercise
+					</a>
+					<aside class="notes">
+						- ladda ner, öppna index.html i webbläsaren<br/>
+						- vad ska koden göra? demonstrera i min webbläsare<br/>
+						- vad gör den inte?<br/>
+						- kan ni fixa den?
+					</aside>
 				</section>
 
 			</div>
