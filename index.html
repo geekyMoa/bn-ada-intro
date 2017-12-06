@@ -35,35 +35,26 @@
 					<section><h1>Internet</h1></section>
 					<section>
 						<h3>Servers vs clients</h3>
-						<div class="fragment no-img-border img-max-size img-no-bg">
-							<div class="fragment internet-server">
-								<img src="/lib/img/server.svg" />
-							</div>
-							<img class="internet-laptop" src="/lib/img/laptop.svg" />
-							<div class="fragment internet-clients">
-								<img style="padding: 0 10px;" src="/lib/img/monitor.svg" />
-								<img style="padding: 0 10px;" src="/lib/img/smartphone-call.svg" />
-								<img style="padding: 0 10px;" src="/lib/img/television.svg" />
-							</div>
-						</div>
+						<h3 class="fragment">Requests och responses</h3>
+						<h3 class="fragment">
+							APIs<br/>
+							<img class="img-no-bg no-img-border" width="500px" src="/lib/img/apis.png" />
+						</h3>
 						<aside class="notes">
 							<ul>
-								<li>förenklat: "annan dator". Program, service</li>
-								<li>client, consumer. client-server-model.</li>
+								<li>
+									<h2>Servers vs clients</h2>
+									- förenklat: "annan dator". Program, service<br/>
+									- client, consumer. client-server-model.
+								</li>
+								<li>
+									<h2>Requests och responses</h2>
+									- förklaringsmodel för hur datorer kommuncerar
+								</li>
+
 							</ul>
 						</aside>
 					</section>
-
-					<section class="no-img-border img-no-bg img-max-size" data-background-color="#fff">
-							<h3>Requests och responses</h3>
-							<img src="/lib/img/transfer.svg">
-					</section>
-
-					<section class="no-img-border img-no-bg" data-background-color="#fff">
-						<h3>APIs</h3>
-						<img class="fragment" src="/lib/img/apis.png" />
-					</section>
-
 				</section>
 
 				<section>
@@ -243,28 +234,6 @@
 						</section>
 
 						<section>
-<pre>
-<code class="html">
-<p class="intro">
-	Augusta Ada King-Noel, Countess of Lovelace [...]
-</p>
-
-<div class="ada-wrapper">
-	<p>
-		[...] Ada Lovelace has often been cited as the first
-		computer programmer for this reason.
-	</p>
-</div>
-
-</code>
-</pre>
-						<aside class="notes">
-							- child selectors <br/>
-							- livekoda exempel om det finns tid
-						</aside>
-						</section>
-
-						<section>
 							<h1>JavaScript</h1>
 							<img src="/lib/img/code-readability.jpg" />
 							<aside class="notes">
@@ -275,15 +244,31 @@
 								- kort kodexempel
 							</aside>
 						</section>
-
 						<section>
 <pre>
 <code class="js">
-var greeting = true;
-if (greeting === true) {
+var person = {
+	name: 'Moa',
+	hairColor: 'brown',
+	numberOfHorsesOwned: 3,
+	yearsAsADeveloper: 7
+};
+
+</code>
+</pre>
+						<aside class="notes">
+							- datatyper, objekt <br />
+							- sätt att lagra data <br />
+							- key, value <br />
+						</aside>
+						</section>
+						<section>
+<pre>
+<code class="js">
+if (person.name === 'Moa') {
 	console.log('Hello, you amazing human being!');
 } else {
-	console.log('Go away, you bloviating flesh bag.')
+	console.log('Go away, you bloviating flesh bag.');
 }
 
 </code>
@@ -295,19 +280,6 @@ if (greeting === true) {
 							- testa i browserns konsoll / node<br/>
 							- förklara objekt, jämför med HMTL (attribut osv)
 						</aside>
-						</section>
-						<section>
-<pre>
-<code class="js">
-var moa = {
-	name: 'Moa',
-	hairColor: 'brown',
-	numberOfHorsesOwned: 3,
-	yearsAsADeveloper: 7
-};
-
-</code>
-</pre>
 						</section>
 				</section>
 
